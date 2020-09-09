@@ -7,7 +7,7 @@
       <span class="iconfont">&#xe632;</span>
       输入城市/景点/游玩主题
     </div>
-    <div class="header-right">
+    <div class="header-right" @click="toCity">
       {{this.city}}
       <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
@@ -20,6 +20,11 @@ export default {
     city: {
       type: String,
       default: ''
+    }
+  },
+  methods: {
+    toCity () {
+      this.$router.push({ name: 'city' })
     }
   }
 }
