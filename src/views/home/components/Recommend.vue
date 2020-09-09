@@ -17,31 +17,39 @@
 <script>
 export default {
   name: 'HomeRecommend',
+  props: {
+    recommendList: {
+      type: Array,
+      default: function () {
+        return []
+      }
+    }
+  },
   data () {
     return {
-      recommendList: [
-        {
-          id: '0001',
-          img: '/imgs/swiper1.jpg',
-          title: '大连生涯海洋公园',
-          desc: '烂漫大连首站,浪漫的海洋主题乐园'
-        }, {
-          id: '0001',
-          img: '/imgs/swiper1.jpg',
-          title: '大连生涯海洋公园',
-          desc: '烂漫大连首站,浪漫的海洋主题乐园'
-        }, {
-          id: '0001',
-          img: '/imgs/swiper1.jpg',
-          title: '大连生涯海洋公园',
-          desc: '烂漫大连首站,浪漫的海洋主题乐园'
-        }, {
-          id: '0001',
-          img: '/imgs/swiper1.jpg',
-          title: '大连生涯海洋公园',
-          desc: '烂漫大连首站,浪漫的海洋主题乐园'
-        }
-      ]
+      // recommendList: [
+      //   {
+      //     id: '0001',
+      //     img: '/imgs/swiper1.jpg',
+      //     title: '大连生涯海洋公园',
+      //     desc: '烂漫大连首站,浪漫的海洋主题乐园'
+      //   }, {
+      //     id: '0001',
+      //     img: '/imgs/swiper1.jpg',
+      //     title: '大连生涯海洋公园',
+      //     desc: '烂漫大连首站,浪漫的海洋主题乐园'
+      //   }, {
+      //     id: '0001',
+      //     img: '/imgs/swiper1.jpg',
+      //     title: '大连生涯海洋公园',
+      //     desc: '烂漫大连首站,浪漫的海洋主题乐园'
+      //   }, {
+      //     id: '0001',
+      //     img: '/imgs/swiper1.jpg',
+      //     title: '大连生涯海洋公园',
+      //     desc: '烂漫大连首站,浪漫的海洋主题乐园'
+      //   }
+      // ]
     }
   }
 }

@@ -1,0 +1,103 @@
+{
+  "ret": true,
+  "data": {
+    "city":"南京",
+    "swiperList":["/imgs/swiper1.jpg", "/imgs/swiper2.jpg"],
+    "iconList": [
+      {
+          "id": "0001",
+          "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg",
+          "desc": "热门景点"
+        },
+        {
+          "id": "0002",
+          "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg",
+          "desc": "滑雪季"
+        },
+        {
+          "id": "0003",
+          "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg",
+          "desc": "泡温泉"
+        }, {
+          "id": "0004",
+          "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg",
+          "desc": "动植园"
+        }, {
+          "id": "0005",
+          "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg",
+          "desc": "热门景点"
+        },
+        {
+          "id": "0006",
+          "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg",
+          "desc": "滑雪季"
+        },
+        {
+          "id": "0007",
+          "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg",
+          "desc": "泡温泉"
+        },
+        {
+          "id": "0008",
+          "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg",
+          "desc": "动植园"
+        }, {
+          "id": "0009",
+          "imgUrl": "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg",
+          "desc": "热门景点"
+        }
+    ],
+     "recommendList": [
+        {
+          "id": "0001",
+          "img": "/imgs/swiper1.jpg",
+          "title": "大连生涯海洋公园",
+          "desc": "烂漫大连首站,浪漫的海洋主题乐园"
+        }, 
+        {
+          "id": "0001",
+          "img": "/imgs/swiper2.jpg",
+          "title": "大连生涯海洋公园",
+          "desc": "烂漫大连首站,浪漫的海洋主题乐园"
+        }, 
+        {
+          "id": "0001",
+          "img": "/imgs/swiper1.jpg",
+          "title": "大连生涯海洋公园",
+          "desc": "烂漫大连首站,浪漫的海洋主题乐园"
+        }, 
+        {
+          "id": "0001",
+          "img": "/imgs/swiper2.jpg",
+          "title": "大连生涯海洋公园",
+          "desc": "烂漫大连首站,浪漫的海洋主题乐园"
+        }
+      ],
+      "weekendList": [
+        {
+          "id": "0001",
+          "img": "/imgs/swiper1.jpg",
+          "title": "大连生涯海洋公园",
+          "desc": "烂漫大连首站,浪漫的海洋主题乐园"
+        }, 
+        {
+          "id": "0001",
+          "img": "/imgs/swiper2.jpg",
+          "title": "大连生涯海洋公园",
+          "desc": "烂漫大连首站,浪漫的海洋主题乐园"
+        }, 
+        {
+          "id": "0001",
+          "img": "/imgs/swiper1.jpg",
+          "title": "大连生涯海洋公园",
+          "desc": "烂漫大连首站,浪漫的海洋主题乐园"
+        }, 
+        {
+          "id": "0001",
+          "img": "/imgs/swiper2.jpg",
+          "title": "大连生涯海洋公园",
+          "desc": "烂漫大连首站,浪漫的海洋主题乐园"
+        }
+      ]
+  }
+}

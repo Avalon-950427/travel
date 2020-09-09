@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item" v-for="(item,index) in recommendList" :key="index">
+      <li class="item" v-for="(item,index) in weekendList" :key="index">
         <div class="item-img-wrap">
           <img class="item-img" :src="item.img" alt="">
         </div>
@@ -17,34 +17,45 @@
 
 <script>
 export default {
-  name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '0001',
-          img: '/imgs/swiper1.jpg',
-          title: '大连生涯海洋公园',
-          desc: '烂漫大连首站,浪漫的海洋主题乐园'
-        }, {
-          id: '0001',
-          img: '/imgs/swiper2.jpg',
-          title: '大连生涯海洋公园',
-          desc: '烂漫大连首站,浪漫的海洋主题乐园'
-        }, {
-          id: '0001',
-          img: '/imgs/swiper1.jpg',
-          title: '大连生涯海洋公园',
-          desc: '烂漫大连首站,浪漫的海洋主题乐园'
-        }, {
-          id: '0001',
-          img: '/imgs/swiper2.jpg',
-          title: '大连生涯海洋公园',
-          desc: '烂漫大连首站,浪漫的海洋主题乐园'
-        }
-      ]
+  name: 'HomeWeekend',
+  props: {
+    weekendList: {
+      type: Array,
+      default: function () {
+        return []
+      }
     }
+  },
+  mounted () {
+    console.log(this.weekendList)
   }
+  // data () {
+  //   return {
+  //     recommendList: [
+  //       {
+  //         id: '0001',
+  //         img: '/imgs/swiper1.jpg',
+  //         title: '大连生涯海洋公园',
+  //         desc: '烂漫大连首站,浪漫的海洋主题乐园'
+  //       }, {
+  //         id: '0001',
+  //         img: '/imgs/swiper2.jpg',
+  //         title: '大连生涯海洋公园',
+  //         desc: '烂漫大连首站,浪漫的海洋主题乐园'
+  //       }, {
+  //         id: '0001',
+  //         img: '/imgs/swiper1.jpg',
+  //         title: '大连生涯海洋公园',
+  //         desc: '烂漫大连首站,浪漫的海洋主题乐园'
+  //       }, {
+  //         id: '0001',
+  //         img: '/imgs/swiper2.jpg',
+  //         title: '大连生涯海洋公园',
+  //         desc: '烂漫大连首站,浪漫的海洋主题乐园'
+  //       }
+  //     ]
+  //   }
+  // }
 }
 </script>
 

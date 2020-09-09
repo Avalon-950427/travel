@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper>
+    <swiper :options="swiperOption">
       <swiper-slide v-for="(item,index) in pages" :key="index">
         <div class="icon" v-for="(pageItem, idx) in item" :key="idx">
           <div class="icon-img">
@@ -16,52 +16,63 @@
 <script>
 export default {
   name: 'Icons',
+  props: {
+    iconList: {
+      type: Array,
+      default: function () {
+        return []
+      }
+    }
+  },
   data () {
     return {
-      iconList: [
-        {
-          id: '0001',
-          imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
-          desc: '热门景点'
-        },
-        {
-          id: '0002',
-          imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
-          desc: '滑雪季'
-        },
-        {
-          id: '0003',
-          imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
-          desc: '泡温泉'
-        }, {
-          id: '0004',
-          imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
-          desc: '动植园'
-        }, {
-          id: '0005',
-          imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
-          desc: '热门景点'
-        },
-        {
-          id: '0006',
-          imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
-          desc: '滑雪季'
-        },
-        {
-          id: '0007',
-          imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
-          desc: '泡温泉'
-        },
-        {
-          id: '0008',
-          imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
-          desc: '动植园'
-        }, {
-          id: '0009',
-          imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
-          desc: '热门景点'
-        }
-      ]
+      swiperOption: {
+        autoplay: false
+      }
+      // iconList: [
+      //   {
+      //     id: '0001',
+      //     imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
+      //     desc: '热门景点'
+      //   },
+      //   {
+      //     id: '0002',
+      //     imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
+      //     desc: '滑雪季'
+      //   },
+      //   {
+      //     id: '0003',
+      //     imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
+      //     desc: '泡温泉'
+      //   }, {
+      //     id: '0004',
+      //     imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
+      //     desc: '动植园'
+      //   }, {
+      //     id: '0005',
+      //     imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
+      //     desc: '热门景点'
+      //   },
+      //   {
+      //     id: '0006',
+      //     imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
+      //     desc: '滑雪季'
+      //   },
+      //   {
+      //     id: '0007',
+      //     imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
+      //     desc: '泡温泉'
+      //   },
+      //   {
+      //     id: '0008',
+      //     imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
+      //     desc: '动植园'
+      //   }, {
+      //     id: '0009',
+      //     imgUrl: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1879642513,297045869&fm=26&gp=0.jpg',
+      //     desc: '热门景点'
+      //   }
+      // ]
     }
   },
   computed: {
