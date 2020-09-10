@@ -1,12 +1,20 @@
 <template>
   <ul class="list">
-    <li class="item">A</li>
+    <li class="item" v-for="(value,key) in cities" :key="key">{{key}}</li>
   </ul>
 </template>
 
 <script>
 export default {
-  name: 'CityHeader'
+  name: 'CityHeader',
+  props: {
+    cities: {
+      type: Object,
+      default: function () {
+        return {}
+      }
+    }
+  }
 }
 </script>
 
@@ -21,7 +29,6 @@ export default {
   right: 0
   bottom: 0
   width: .4rem
-  background: red
   .item
     line-height: .4rem
     text-align: center
